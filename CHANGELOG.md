@@ -5,6 +5,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.2]
+
+### Added
+- Added support to exclude specific import namespaces on the `UnnecessaryImportRule` ([#55](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/88)).
+
+### Fixed
+- Fixed exception throw by `UnnecessaryImportRule` when analysing Gosu files with wildcard imports ([#54](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/97)).
+- Fixed ignored `@SuppressWarnings` on enhancements ([#83](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/83)).
+- Fixed unnecessary imports been highlighted on the wrong line ([#87](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/87)).
+
 ### Removed
 - Removed deprecated `DuplicatedBlocks` rule from built-in profile [(#70)](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/70).
 
@@ -54,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed NPE on UnnecessaryImportRule [(#31)](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/31).
 - Fixed NPE on InternalImportsRule [(#29)](https://github.com/FRI-DAY/sonar-gosu-plugin/pull/29);
 
-[Unreleased]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/FRI-DAY/sonar-gosu-plugin/compare/v1.0.0...v1.1.0
